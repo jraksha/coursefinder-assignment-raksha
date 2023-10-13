@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>courseFinder</title>
+    <!-- css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+  </head>
+  <body>
+    <main id="main-wrapper">
+      <aside id="sidebar-wrapper">    
+        <ul class="sidebar-nav">
+          <li class="menu-item active">
+            <a href="#" class="menu-link"
+              ><img src="./assets/home.svg" alt="Dashboard" /><span
+                >Dashboard</span
+              ></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link"
+              ><img src="./assets/student.svg" alt="Students" /><span
+                >Students</span
+              ></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link"
+              ><img src="./assets/applications.svg" alt="Applications" /><span
+                >Applications</span
+              ></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link"
+              ><img src="./assets/search-course.svg" alt="Applications" /><span
+                >Search Courses</span
+              ></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link"
+              ><img src="./assets/wallet.svg" alt="Applications" /><span
+                >Wallet</span
+              ></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link"
+              ><img src="./assets/commission.svg" alt="Applications" /><span
+                >Commission Payments</span
+              ></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link"
+              ><img src="./assets/allied.svg" alt="Applications" /><span
+                >Allied Services</span
+              ></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link"
+              ><img
+                src="./assets/learning-resources.svg"
+                alt="Applications"
+              /><span>Learning Resources</span></a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="#" class="menu-link"
+              ><img src="./assets/quick-links.svg" alt="Applications" /><span
+                >Quick Links</span
+              ></a
+            >
+          </li>
+          <li class="menu-item submit-feedback">
+            <a href="#" class="menu-link"
+              ><img src="./assets/feedback.svg" alt="Applications" /><span
+                >Submit feedback</span
+              ></a
+            >
+          </li>
+        </ul>
+      </aside>
+      <header id="navbar-wrapper" class="main-header">
+        <nav class="navbar navbar-expand-lg cst-navbar">
+          <div class="sidebar-brand navbar-brand">
+            <img src="./assets/coursefinder.ai.svg" alt="coursefinder" />
+          </div>
+          <form class="form-inline my-2 my-lg-0 mr-auto">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"
+                  ><img src="./assets/search.svg" alt="Search"
+                /></span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search by student name, ack no."
+              />
+            </div>
+          </form>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link underline" href="#">
+                <img class="info-img" src="./assets/info.svg" alt="Info" />
+                <span> Whats New?</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link notification" href="#"
+                ><span class="notification-num">2</span
+                ><img src="./assets/notification.svg" alt="Notification"
+              /></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  class="avatar-img"
+                  src="./assets/profile-img.png"
+                  alt="Avatar"
+                />
+                <span>Dikha Goel</span>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-- body content -->
+      <section id="content-wrapper">
+        <div class="sub-head m-36">
+          <a href="#" class="navbar-brand" id="sidebar-toggle"
+            ><img src="./assets/chevron-left.svg" alt=""
+          /></a>
+          <h1 class="h1-title">Hey, Good Morning <strong>Diksha!</strong></h1>
+          <div class="btn-block">
+            <button type="button" class="btn btn-outline-primary">
+              Apply Filters
+            </button>
+            <button type="button" class="btn btn-primary">Primary</button>
+          </div>
+        </div>
+        <section class="body-content-wrap">
+          <div class="center-content">
+            <div class="card cst-card">
+              <div class="card-body p-0">
+                <form class="cst-form">
+                  <div class="form-group year flex-fill">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01"
+                          ><img src="./assets/calendar.svg" alt=""
+                        /></label>
+                      </div>
+                      <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Year</option>
+                        <option value="1">2022</option>
+                        <option value="2">2023</option>
+                        <option value="3">2021</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group created-date flex-fill">
+                    <div class="input-group">
+                      <input
+                        type="date"
+                        class="custom-select select-data"
+                        placeholder="Date Created"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group select-intake flex-fill">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01"
+                          ><img src="./assets/calendartic.svg" alt=""
+                        /></label>
+                      </div>
+                      <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Select intake</option>
+                        <option value="1">2022</option>
+                        <option value="2">2023</option>
+                        <option value="3">2021</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group select-intake flex-fill countries">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01"
+                          ><img src="./assets/calendartic.svg" alt=""
+                        /></label>
+                      </div>
+                      <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Countries</option>
+                        <option value="1">option 1</option>
+                        <option value="2">option 2</option>
+                        <option value="3">option 3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-outline-primary">
+                    Apply Filters
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- services cards section -->
+            <section class="condition-block">
+              <div class="card-wrapper">
+                <div class="condition-card bg_primary">
+                  <h2 class="txt-primary">18</h2>
+                  <p>Conditional</p>
+                  <button class="btn btn-outline-primary btn-sm">
+                    Offer Letter
+                  </button>
+                </div>
+                <div class="condition-card bg_success">
+                  <h2 class="txt-success">22</h2>
+                  <p>Un-Conditional</p>
+                  <button class="btn btn-outline-success btn-sm offer-btn">
+                    Offer Letter
+                  </button>
+                </div>
+                <div class="condition-card bg_warning">
+                  <h2 class="txt-warning">30</h2>
+                  <p>Payment Received</p>
+                  <button class="btn btn-outline-warning btn-sm">
+                    Offer Letter
+                  </button>
+                </div>
+                <div class="condition-card bg_danger">
+                  <h2 class="txt-danger">8</h2>
+                  <p>Payment Received</p>
+                  <button class="btn btn-outline-danger btn-sm">
+                    Offer Letter
+                  </button>
+                </div>
+                <div class="condition-card bg_secondary">
+                  <h2 class="txt-secondary">18</h2>
+                  <p>VISA Received</p>
+                  <button class="btn btn-outline-dark btn-sm">
+                    Offer Letter
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <!-- table -->
+            <section class="application-wrapper cst-card">
+              <div class="table-head">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h4>Application</h4>
+                  <a href="#"> <img src="./assets/maximize-2.svg" /></a>
+                </div>
+                <div class="table-nav-wrapper">
+                  <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Pending On Me(15)</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Lorem Ipsum (12)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Lorem Ipsum (18)</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="table-responsive">
+                <table id="example" class="table cst-table" style="width: 100%">
+                  <thead>
+                    <tr>
+                      <th>Ack.no. <img src="./assets/code.svg" /></th>
+                      <th>Student name <img src="./assets/code.svg" /></th>
+                      <th>University <img src="./assets/code.svg" /></th>
+                      <th>Program <img src="./assets/code.svg" /></th>
+                      <th>Pending Since <img src="./assets/code.svg" /></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td-left-padding">117110/22-23</td>
+                      <td>
+                        <p class="mt-0 mb-0">Rishi Joshi</p>
+                        <p class="mt-0 mb-0 grey-color">rishijoshi@gmail.com</p>
+                      </td>
+                      <td>Sheffield Hallam...</td>
+                      <td>
+                        <p class="mt-0 mb-0">Msc</p>
+                        <p class="mt-0 mb-0">Internation...</p>
+                      </td>
+                      <td>
+                        <p class="mt-0 mb-0">1 Day</p>
+                        <p class="mt-0 mb-0 grey-color">12 Dec 2022</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-left-padding">117110/22-23</td>
+                      <td>
+                        <p class="mt-0 mb-0">Rishi Joshi</p>
+                        <p class="mt-0 mb-0 grey-color">rishijoshi@gmail.com</p>
+                      </td>
+                      <td>Sheffield Hallam...</td>
+                      <td>
+                        <p class="mt-0 mb-0">Msc</p>
+                        <p class="mt-0 mb-0">Internation...</p>
+                      </td>
+                      <td>
+                        <p class="mt-0 mb-0">1 Day</p>
+                        <p class="mt-0 mb-0 grey-color">12 Dec 2022</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-left-padding">117110/22-23</td>
+                      <td>
+                        <p class="mt-0 mb-0">Rishi Joshi</p>
+                        <p class="mt-0 mb-0 grey-color">rishijoshi@gmail.com</p>
+                      </td>
+                      <td>Sheffield Hallam...</td>
+                      <td>
+                        <p class="mt-0 mb-0">Msc</p>
+                        <p class="mt-0 mb-0">Internation...</p>
+                      </td>
+                      <td>
+                        <p class="mt-0 mb-0">1 Day</p>
+                        <p class="mt-0 mb-0 grey-color">12 Dec 2022</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td-left-padding">117110/22-23</td>
+                      <td>
+                        <p class="mt-0 mb-0">Rishi Joshi</p>
+                        <p class="mt-0 mb-0 grey-color">rishijoshi@gmail.com</p>
+                      </td>
+                      <td>Sheffield Hallam...</td>
+                      <td>
+                        <p class="mt-0 mb-0">Msc</p>
+                        <p class="mt-0 mb-0">Internation...</p>
+                      </td>
+                      <td>
+                        <p class="mt-0 mb-0">1 Day</p>
+                        <p class="mt-0 mb-0 grey-color">12 Dec 2022</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagination-wrapper">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link left" href="#">
+                      <img src="./assets/chevron-left.svg" />
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link grey-color" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link grey-color" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link grey-color" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link right" href="#"
+                      ><img src="./assets/chevron-right-blue.svg"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!-- slider -->
+            <section class="allied-services-slider">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="al-carousel-in-content">
+                      <div class="row">
+                        <div class="col-md-8 col">
+                          <article class="al-carousel-content">
+                            <small class="sm-text">Allied Services</small>
+                            <h3 class="h3-title">Overseas Education Loans</h3>
+                            <p class="cst-para">
+                              Provide end to end overseas education loan assistance
+                              to your students to help them achieve their goal
+                            </p>
+                            <button type="button" class="btn btn-light">
+                              Get Started
+                            </button>
+                          </article>
+                        </div>
+                        <div class="col-md-4 col">
+                          <figure class="al-carousel-img">
+                            <img
+                              src="./assets/istockpho-removebg-preview.png"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="al-carousel-in-content">
+                      <div class="row">
+                        <div class="col-md-8 col">
+                          <article class="al-carousel-content">
+                            <small class="sm-text">Allied Services</small>
+                            <h3 class="h3-title">Overseas Education Loans</h3>
+                            <p class="cst-para">
+                              Provide end to end overseas education loan assistance
+                              to your students to help them achieve their goal
+                            </p>
+                            <button type="button" class="btn btn-light">
+                              Get Started
+                            </button>
+                          </article>
+                        </div>
+                        <div class="col-md-4 col">
+                          <figure class="al-carousel-img">
+                            <img
+                              src="./assets/istockpho-removebg-preview.png"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="al-carousel-in-content">
+                      <div class="row">
+                        <div class="col-md-8 col">
+                          <article class="al-carousel-content">
+                            <small class="sm-text">Allied Services</small>
+                            <h3 class="h3-title">Overseas Education Loans</h3>
+                            <p class="cst-para">
+                              Provide end to end overseas education loan assistance
+                              to your students to help them achieve their goal
+                            </p>
+                            <button type="button" class="btn btn-light">
+                              Get Started
+                            </button>
+                          </article>
+                        </div>
+                        <div class="col-md-4 col">
+                          <figure class="al-carousel-img">
+                            <img
+                              src="./assets/istockpho-removebg-preview.png"
+                              alt=""
+                            />
+                          </figure>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="1"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="2"
+                  ></li>
+                </ol>
+              </div>
+            </section>
+          </div>
+          <aside class="right-section">
+            <div class="cst-card">
+              <h6 class="h6-title">News Bulletin</h6>
+              <!-- New slider -->
+              <div
+                id="newscarousel"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card mb-3 border-0">
+                      <div class="d-flex gap-3">
+                        <div class="news-icon">
+                          <img
+                            src="./assets/fluent_news-20-regular.svg"
+                            alt="Fluent News"
+                          />
+                        </div>
+                        <div class="card-body p-0">
+                          <h6 class="h6-title">Indian student tops harward!</h6>
+                          <p class="card-text news-card-text fw-normal">
+                            Indian student tops harward university and makes
+                            history. Its the first time for an Indian student to
+                            do this.<a href="#">Read More</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 border-0">
+                      <div class="d-flex gap-3">
+                        <div class="news-icon">
+                          <img
+                            src="./assets/fluent_news-20-regular.svg"
+                            alt="Fluent News"
+                          />
+                        </div>
+                        <div class="card-body p-0">
+                          <h6 class="h6-title">Indian student tops harward!</h6>
+                          <p class="card-text news-card-text fw-normal">
+                            Indian student tops harward university and makes
+                            history. Its the first time for an Indian student to
+                            do this.<a href="#">Read More</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card mb-3 border-0">
+                      <div class="d-flex gap-3">
+                        <div class="news-icon">
+                          <img
+                            src="./assets/fluent_news-20-regular.svg"
+                            alt="Fluent News"
+                          />
+                        </div>
+                        <div class="card-body p-0">
+                          <h6 class="h6-title">Indian student tops harward!</h6>
+                          <p class="card-text news-card-text fw-normal">
+                            Indian student tops harward university and makes
+                            history. Its the first time for an Indian student to
+                            do this.<a href="#">Read More</a>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#newscarousel"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li data-target="#newscarousel" data-slide-to="1"></li>
+                  <li data-target="#newscarousel" data-slide-to="2"></li>
+                </ol>
+              </div>
+            </div>
+            <div class="cst-card upcoming-event-block">
+              <h6 class="h6-title">Upcoming Events</h6>
+              <!-- New slider -->
+              <div>
+                <a
+                  type="button"
+                  class="carousel-control-prev"
+                  href="#eventsCarousel"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon" aria-hidden="true"
+                    ><img src="./assets/prev.svg" alt="prev"
+                  /></span>
+                </a>
+                <a
+                  type="button"
+                  class="carousel-control-next"
+                  href="#eventsCarousel"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span class="carousel-control-next-icon" aria-hidden="true"
+                    ><img src="./assets/next.svg" alt="next"
+                  /></span>
+                </a>
+              </div>
+              <div
+                id="eventsCarousel"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card border-0">
+                      <div class="row g-0">
+                        <img
+                          src="./assets/event-img.png"
+                          alt="event-img"
+                          class="img-fluid"
+                        />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <div>
+                              <p class="card-title fw-medium mt-2 mb-0">
+                                Event Name Goes here
+                              </p>
+                              <p class="event-date fw-medium">7 Jan 2023</p>
+                            </div>
+                            <div class="event-time rounded text-center">
+                              4:30 <span>PM</span>
+                            </div>
+                          </div>
+                          <p class="card-text news-card-text fw-normal">
+                            <img src="./assets/university.svg" alt="" />
+                            <span>University of New York</span>
+                          </p>
+                          <p class="card-text news-card-text fw-normal">
+                            <img src="./assets/user.svg" alt="" />
+                            <span>By Kishori Gupta</span>
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary w-100 mt-3"
+                          >
+                            Register Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card border-0">
+                      <div class="row g-0">
+                        <img
+                          src="./assets/event-img.png"
+                          alt="event-img"
+                          class="img-fluid"
+                        />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <div>
+                              <p class="card-title fw-medium mt-2 mb-0">
+                                Event Name Goes here
+                              </p>
+                              <p class="event-date fw-medium">7 Jan 2023</p>
+                            </div>
+                            <div class="event-time rounded text-center">
+                              4:30 <span>PM</span>
+                            </div>
+                          </div>
+                          <p class="card-text news-card-text fw-normal">
+                            <img src="./assets/university.svg" alt="" />
+                            <span>University of New York</span>
+                          </p>
+                          <p class="card-text news-card-text fw-normal">
+                            <img src="./assets/user.svg" alt="" />
+                            <span>By Kishori Gupta</span>
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary w-100 mt-3"
+                          >
+                            Register Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card border-0">
+                      <div class="row g-0">
+                        <img
+                          src="./assets/event-img.png"
+                          alt="event-img"
+                          class="img-fluid"
+                        />
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <div>
+                              <p class="card-title fw-medium mt-2 mb-0">
+                                Event Name Goes here
+                              </p>
+                              <p class="event-date fw-medium">7 Jan 2023</p>
+                            </div>
+                            <div class="event-time rounded text-center">
+                              4:30 <span>PM</span>
+                            </div>
+                          </div>
+                          <p class="card-text news-card-text fw-normal">
+                            <img src="./assets/university.svg" alt="" />
+                            <span>University of New York</span>
+                          </p>
+                          <p class="card-text news-card-text fw-normal">
+                            <img src="./assets/user.svg" alt="" />
+                            <span>By Kishori Gupta</span>
+                          </p>
+                          <button
+                            type="button"
+                            class="btn btn-primary w-100 mt-3"
+                          >
+                            Register Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="quick-links-section">
+              <p class="fw-bold">Quick Links</p>
+              <div class="bg-white p-2 external-link-box px-4 py-3">
+                <a
+                  class="d-flex align-items-center justify-content-between external-link-text"
+                >
+                  Learning resourses
+                  <button class="border-0 bg-white">
+                    <img src="assets/external-link.svg" alt="link" />
+                  </button>
+                </a>
+              </div>
+              <div class="bg-white p-2 external-link-box px-4 py-3">
+                <a
+                  class="d-flex align-items-center justify-content-between external-link-text"
+                >
+                  Learning resourses
+                  <button class="border-0 bg-white">
+                    <img src="assets/external-link.svg" alt="link" />
+                  </button>
+                </a>
+              </div>
+              <div class="bg-white p-2 external-link-box px-4 py-3">
+                <a
+                  class="d-flex align-items-center justify-content-between external-link-text"
+                >
+                  Learning resourses
+                  <button class="border-0 bg-white">
+                    <img src="assets/external-link.svg" alt="link" />
+                  </button>
+                </a>
+              </div>
+              <div class="bg-white p-2 external-link-box px-4 py-3">
+                <a
+                  class="d-flex align-items-center justify-content-between external-link-text"
+                >
+                  Learning resourses
+                  <button class="border-0 bg-white">
+                    <img src="assets/external-link.svg" alt="link" />
+                  </button>
+                </a>
+              </div>
+              <div class="bg-white p-2 external-link-box px-4 py-3">
+                <a
+                  class="d-flex align-items-center justify-content-between external-link-text"
+                >
+                  Learning resourses
+                  <button class="border-0 bg-white">
+                    <img src="assets/external-link.svg" alt="link" />
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-regional-section mt-4">
+              <p class="fw-bold">Contact Regional Manager</p>
+              <div class="card mb-3">
+                <div class="row align-items-center g-0 px-3 py-2">
+                  <div class="col-md-2">
+                    <img
+                    class="user-img"  
+                    src="assets/user-ellipse-img.svg"
+                      class=" rounded-start"
+                      alt="manager-img"
+                    />
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body">
+                      <p class="manager-name fw-medium mb-0">Santosh Sharma</p>
+                      <div class="d-flex gap-2 manager-details">
+                        <span class="manager-contact">+91 9876543210 </span>
+                        <span>|</span>
+                        <span class="manager-location"> Hyderabad</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-1 text-center manager-email">
+                  sshatmal123@kcoverseas.com
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="row align-items-center g-0 px-3 py-2">
+                  <div class="col-md-2">
+                    <img
+                    class="user-img"  
+                    src="assets/user-ellipse-img.svg"
+                      class=" rounded-start"
+                      alt="manager-img"
+                    />
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body">
+                      <p class="manager-name fw-medium mb-0">Santosh Sharma</p>
+                      <div class="d-flex gap-2 manager-details">
+                        <span class="manager-contact">+91 9876543210 </span>
+                        <span>|</span>
+                        <span class="manager-location"> Hyderabad</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-1 text-center manager-email">
+                  sshatmal123@kcoverseas.com
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="row align-items-center g-0 px-3 py-2">
+                  <div class="col-md-2">
+                    <img
+                    class="user-img"  
+                    src="assets/user-ellipse-img.svg"
+                      class=" rounded-start"
+                      alt="manager-img"
+                    />
+                  </div>
+                  <div class="col-md-10">
+                    <div class="card-body">
+                      <p class="manager-name fw-medium mb-0">Santosh Sharma</p>
+                      <div class="d-flex gap-2 manager-details">
+                        <span class="manager-contact">+91 9876543210 </span>
+                        <span>|</span>
+                        <span class="manager-location"> Hyderabad</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-1 text-center manager-email">
+                  sshatmal123@kcoverseas.com
+                </div>
+              </div>
+            </div>
+          </aside>
+        </section>
+      </section>
+    </main>
+    <!-- js -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/custom.js"></script>
+  </body>
+</html>
