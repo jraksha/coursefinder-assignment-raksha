@@ -221,11 +221,6 @@ a:focus {
     z-index: 2;
 }
 
-#main-wrapper.toggled #navbar-wrapper {
-    position: absolute;
-    margin-right: -264px;
-}
-
 #navbar-wrapper .navbar {
     background-color: var(--brand-primary);
     min-height: 76px;
@@ -325,11 +320,6 @@ a:focus {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
-}
-
-#main-wrapper.toggled #content-wrapper {
-    position: absolute;
-    margin-right: -264px;
 }
 
 .m-36 {
@@ -532,17 +522,17 @@ a:focus {
     display: flex;
     gap: 18px;
     padding-top: 32px;
-    flex-wrap: wrap;
 }
 
 .condition-card {
     padding: 12px 9px;
     width: 137px;
-    height: 107px;
+    height: 120px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.06);
     margin-top: 20px;
+    position: relative;
 }
 
 .condition-card h2 {
@@ -558,13 +548,18 @@ a:focus {
     font-size: 14px;
     font-weight: 400;
     line-height: 150%;
-    white-space: nowrap;
 }
 
 .condition-card .btn {
     background-color: var(--white-color);
-    transform: translateY(16px);
+    transform: translateY(-50%);
     border-radius: 3px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -30px;
+    width: 80%;
 }
 
 .condition-card .btn-sm {
@@ -1001,6 +996,9 @@ a:focus {
     .contact-regional-section .col-md-2 {
         text-align: center;
     }
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1034,16 +1032,6 @@ a:focus {
         margin: 0;
     }
 
-    #main-wrapper.toggled #navbar-wrapper {
-        position: absolute;
-        margin-right: -190px;
-    }
-
-    #main-wrapper.toggled #content-wrapper {
-        position: absolute;
-        margin-right: -190px;
-    }
-
     #navbar-wrapper {
         position: fixed;
         right: 0;
@@ -1063,6 +1051,11 @@ a:focus {
     #main-wrapper.toggled #content-wrapper {
         margin-right: 0;
     }
+    #main-wrapper.toggled #content-wrapper {
+        padding-left: 60px;
+    }
+
+}
 }
 
 @media screen and (max-width:991px) {
